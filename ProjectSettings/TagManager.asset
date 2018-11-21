@@ -13,19 +13,19 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - lever
+  - stepstones
+  - enemy
+  - pit
+  - lever5
+  - lever6
+  - lever7
+  - lever8
+  - lever9
+  - lever10
+  - lever11
+  - lever12
+  - player
   - 
   - 
   - 
@@ -40,4 +40,28 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 549922057
+    locked: 0
+  - name: pit
+    uniqueID: 1991713051
+    locked: 0
+  - name: stepstones
+    uniqueID: 2850720467
+    locked: 0
+  - name: enemy
+    uniqueID: 765218619
+    locked: 0
+  - name: player
+    uniqueID: 3468177429
+    locked: 0
+  - name: wall
+    uniqueID: 2136295239
+    locked: 0
+  - name: lever
+    uniqueID: 3201171817
+    locked: 0
+  - name: foreground
+    uniqueID: 652055079
     locked: 0
