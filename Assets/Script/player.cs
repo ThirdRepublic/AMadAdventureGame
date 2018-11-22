@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class player : MonoBehaviour {
-    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float moveSpeed = 0.5f;
     // Use this for initialization
     BoxCollider2D mycollider;
     Rigidbody2D myRigidbody2D;
@@ -56,9 +57,18 @@ public class player : MonoBehaviour {
     }
     private void PlayerMove()
     {
-        var newXPos = Input.GetAxis("Horizontal") * moveSpeed;
-
-        var newYPos = Input.GetAxis("Vertical") * moveSpeed;
+        var newXPos = 0f;
+        var newYPos = 0f;
+        // button click 
+        if (CrossPlatformInputManager.GetAxis("Horizontal") != 0 || CrossPlatformInputManager.GetAxis("Vertical") != 0) {
+            newXPos = CrossPlatformInputManager.GetAxis("Horizontal") * moveSpeed;
+            newYPos = CrossPlatformInputManager.GetAxis("Vertical") * moveSpeed;
+        }
+        else // keyboard
+        {
+            newXPos = Input.GetAxis("Horizontal") * moveSpeed;
+            newYPos = Input.GetAxis("Vertical") * moveSpeed;
+        }
 
         Vector2 playermoveset = new Vector2(newXPos, newYPos);
         myRigidbody2D.velocity = playermoveset;
