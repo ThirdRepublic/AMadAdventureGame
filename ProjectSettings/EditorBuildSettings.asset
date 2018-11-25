@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/startup_scene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Startmenu.unity
+    guid: ba1780b3c6b9f9f46b13182e75b8cac6
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: 26a9a24c9bd19144b8ef6b957d224989
+  - enabled: 1
+    path: Assets/Scenes/level_1.unity
+    guid: e6ff9a7104a1b6445afbaae9c2a9f4e3
+  - enabled: 1
+    path: Assets/Scenes/level_2.unity
+    guid: 9105ba597c703954a8438e227702a901
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Optionmenu.unity
+    guid: 430dae83f91d58f4dba80611b9a24163
+  - enabled: 1
+    path: Assets/Scenes/Helppage.unity
+    guid: 8e977fb1b145e064ab4c31a9370c5c0b
+  - enabled: 1
+    path: Assets/Scenes/winmenu.unity
+    guid: b2c117dddec2c4c46bbd7020dd0562d0
+  - enabled: 1
+    path: Assets/Scenes/losemenu.unity
+    guid: 8f0a859497327484891b07936691865a
+  - enabled: 1
+    path: Assets/Scenes/Quitename.unity
+    guid: 6ebb1a19bc3c00349917b200e023733f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  m_configObjects: {}
