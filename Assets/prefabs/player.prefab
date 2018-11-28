@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1893333634516698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.92, y: 15.01, z: -0.0390625}
+  m_LocalPosition: {x: -24.89, y: 15.82, z: -0.0390625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,6 +109,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  pitLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  stoneLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  bullets: 3
+  numofbullets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  pushback: {x: 2, y: 2}
 --- !u!212 &212491961933516566
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -142,7 +157,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -826789867
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dcd156fd3d40a5844901a5fc109f2185, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class enemymove : MonoBehaviour {
     public float movespeed = 1f;
     Rigidbody2D myRigidbody;
+    public string platmove;
 
     // Use this for initialization
     void Start()
@@ -15,7 +16,14 @@ public class enemymove : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        myRigidbody.velocity = new Vector2(0f, movespeed);
+        if (platmove == "Vertical")
+        {
+            myRigidbody.velocity = new Vector2(0f, movespeed);
+        }
+        else if (platmove == "Horizontal")
+        {
+            myRigidbody.velocity = new Vector2(movespeed, 0f);
+        }
     }
    
 
