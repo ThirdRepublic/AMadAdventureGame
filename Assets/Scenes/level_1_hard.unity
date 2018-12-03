@@ -1141,20 +1141,20 @@ Prefab:
       objectReference: {fileID: 600548195}
     - target: {fileID: 4621963971415474, guid: c09761ee562c94e4fbe844cdb87748e7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.424129
+      value: -17.49587
       objectReference: {fileID: 0}
     - target: {fileID: 4621963971415474, guid: c09761ee562c94e4fbe844cdb87748e7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.65358675
+      value: 15.356414
       objectReference: {fileID: 0}
     - target: {fileID: 4621963971415474, guid: c09761ee562c94e4fbe844cdb87748e7, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.283548
+      value: -10.096451
       objectReference: {fileID: 0}
     - target: {fileID: 20715174351774814, guid: c09761ee562c94e4fbe844cdb87748e7,
         type: 2}
       propertyPath: orthographic size
-      value: 10
+      value: 2.68
       objectReference: {fileID: 0}
     - target: {fileID: 4713500239943568, guid: c09761ee562c94e4fbe844cdb87748e7, type: 2}
       propertyPath: m_LocalPosition.x
