@@ -13,9 +13,10 @@ public class player : MonoBehaviour {
     Animator myanime;
     public LayerMask enemyLayer;
     public LayerMask pitLayer;
+    public LayerMask stoneLayer;
     public int bullets;
     public GameObject[] numofbullets;
-
+    public Vector2 pushback = new Vector2(.5f, .5f);
 
     bool isActive = true;
 
@@ -30,6 +31,7 @@ public class player : MonoBehaviour {
         if (!isActive){ return; }
         PlayerMove();
         Die();
+        push();
     }
 
     private void Die()
@@ -37,7 +39,7 @@ public class player : MonoBehaviour {
         if (mybodycol.IsTouchingLayers(enemyLayer))
         {
 
-            //isActive = false;
+            isActive = false;
             Debug.Log("dead");
             SceneManager.LoadScene("losemenu");
             // for(int i = 0; i < numofbullets.Length; i++) {
@@ -58,9 +60,19 @@ public class player : MonoBehaviour {
         else if (mybodycol.IsTouchingLayers(pitLayer))
         {
             Debug.Log("pit");
+            isActive = false;
             SceneManager.LoadScene("losemenu");
         }
     }
+
+    private void push()
+    {
+        if (mybodycol.IsTouchingLayers(stoneLayer))
+        {
+            GetComponent<Rigidbody2D>().velocity = pushback;
+        }
+    }
+
     private void PlayerMove()
     {
         var newXPos = 0f;

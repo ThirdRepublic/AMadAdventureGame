@@ -12,11 +12,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Startmenu.unity
     guid: ba1780b3c6b9f9f46b13182e75b8cac6
   - enabled: 1
-    path: Assets/Scenes/Map.unity
+    path: Assets/Scenes/difficult_choice.unity
+    guid: a9e14fb974743264e93ed46199b3d90c
+  - enabled: 1
+    path: Assets/Scenes/Map_easy.unity
     guid: 26a9a24c9bd19144b8ef6b957d224989
   - enabled: 1
-    path: Assets/Scenes/level_1.unity
+    path: Assets/Scenes/Map_medium.unity
+    guid: 9b5c383beebb1e840bab5ea24d4a80dd
+  - enabled: 1
+    path: Assets/Scenes/Map_hard.unity
+    guid: 8ef4e8b6a93636848b403cc0fd459350
+  - enabled: 1
+    path: Assets/Scenes/level_1_easy.unity
     guid: e6ff9a7104a1b6445afbaae9c2a9f4e3
+  - enabled: 1
+    path: Assets/Scenes/level_1_medium.unity
+    guid: 3b18639a9305adf4b9aee8ce9941aa8c
+  - enabled: 1
+    path: Assets/Scenes/level_1_hard.unity
+    guid: be781600650b3f14ca926f807bad8c3b
   - enabled: 1
     path: Assets/Scenes/level_2.unity
     guid: 9105ba597c703954a8438e227702a901
@@ -38,6 +53,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quitename.unity
     guid: 6ebb1a19bc3c00349917b200e023733f
+  - enabled: 1
+    path: Assets/Scenes/Payment.unity
+    guid: cea20a1b80e16f64ca7cf9c0b3f9e216
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

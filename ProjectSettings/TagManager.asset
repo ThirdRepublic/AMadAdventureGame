@@ -50,14 +50,14 @@ TagManager:
   - name: stepstones
     uniqueID: 2850720467
     locked: 0
-  - name: enemy
-    uniqueID: 765218619
-    locked: 0
   - name: player
     uniqueID: 3468177429
     locked: 0
   - name: wall
     uniqueID: 2136295239
+    locked: 0
+  - name: enemy
+    uniqueID: 765218619
     locked: 0
   - name: lever
     uniqueID: 3201171817

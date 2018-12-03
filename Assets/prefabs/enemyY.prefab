@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 1.5
+  platmove: Vertical
 --- !u!212 &212663586021677966
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -194,7 +195,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 765218619
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 65d64a6d428c9b14ba22e322ef76b607, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
