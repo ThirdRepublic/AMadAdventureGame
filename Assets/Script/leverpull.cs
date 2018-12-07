@@ -25,10 +25,10 @@ public class leverpull : MonoBehaviour {
         
         if (mycollider.IsTouchingLayers(playerLayer))
         {
-            bool isLeverpulled = Input.GetKeyDown(KeyCode.Return);
-            if (isLeverpulled)
-            {
-                myanimator.SetBool("switch", isLeverpulled);
+            //bool isLeverpulled = Input.GetKeyDown(KeyCode.Return);
+            //if (isLeverpulled)
+            //{
+                myanimator.SetBool("switch", true);
                 
                 for(int i = 0; i < objectdestroyed.Length; i++)
                 {
@@ -42,7 +42,7 @@ public class leverpull : MonoBehaviour {
 
                     }
                  }
-            }
+           // }
            
             
             
