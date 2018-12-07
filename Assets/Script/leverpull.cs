@@ -32,8 +32,15 @@ public class leverpull : MonoBehaviour {
                 
                 for(int i = 0; i < objectdestroyed.Length; i++)
                 {
-                    Debug.Log(objectdestroyed[i].name);
-                    Object.Destroy(objectdestroyed[i]);
+                    try
+                    {
+                        Debug.Log(objectdestroyed[i].name);
+                        Object.Destroy(objectdestroyed[i]);
+                    }
+                    catch
+                    {
+
+                    }
                  }
             }
            

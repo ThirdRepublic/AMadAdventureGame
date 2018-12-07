@@ -8,6 +8,6 @@ public class nextlevel : MonoBehaviour {
     // Use this for initialization
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("Map");
+        SceneManager.LoadScene("winmenu");
     }
 }
