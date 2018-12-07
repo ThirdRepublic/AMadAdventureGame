@@ -180,7 +180,7 @@ RectTransform:
   - {fileID: 1575679696}
   - {fileID: 826323255}
   - {fileID: 285867918}
-  - {fileID: 922793657}
+  - {fileID: 1037145554}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -686,6 +686,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.81343156
       objectReference: {fileID: 0}
+    - target: {fileID: 114075315010044370, guid: cab6709799b532d4db258ecb4436e010,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: difficult_choice
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cab6709799b532d4db258ecb4436e010, type: 2}
   m_IsPrefabAsset: 0
@@ -801,12 +806,43 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Quitename
       objectReference: {fileID: 0}
+    - target: {fileID: 1180096764222114, guid: 28899973d642470498ffcc7fdf37da87, type: 2}
+      propertyPath: m_Name
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114669569114455560, guid: 28899973d642470498ffcc7fdf37da87,
+        type: 2}
+      propertyPath: m_text
+      value: 'Quit
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114669569114455560, guid: 28899973d642470498ffcc7fdf37da87,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114669569114455560, guid: 28899973d642470498ffcc7fdf37da87,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114669569114455560, guid: 28899973d642470498ffcc7fdf37da87,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114669569114455560, guid: 28899973d642470498ffcc7fdf37da87,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28899973d642470498ffcc7fdf37da87, type: 2}
   m_IsPrefabAsset: 0
---- !u!224 &922793657 stripped
+--- !u!224 &1037145554 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224373557530348018, guid: 28899973d642470498ffcc7fdf37da87,
+  m_CorrespondingSourceObject: {fileID: 224463874211944620, guid: 28899973d642470498ffcc7fdf37da87,
     type: 2}
   m_PrefabInternal: {fileID: 922793656}
 --- !u!1 &1575679695
