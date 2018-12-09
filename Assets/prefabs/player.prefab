@@ -134,7 +134,7 @@ MonoBehaviour:
   stoneLayer:
     serializedVersion: 2
     m_Bits: 512
-  bullets: 3
+  bullets: 0
   bulletCounter: {fileID: 0}
   bulletTile: {fileID: 0}
   bulletMult: {fileID: 0}
