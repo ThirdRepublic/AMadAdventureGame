@@ -36,9 +36,15 @@ public class leverpull : MonoBehaviour
 
             for (int i = 0; i < objectdestroyed.Length; i++)
             {
-                StartCoroutine(destroyAfter1Sec(objectdestroyed[i]));
-                Debug.Log(objectdestroyed[i].name);
+                try
+                {
+                    StartCoroutine(destroyAfter1Sec(objectdestroyed[i]));
+                    Debug.Log(objectdestroyed[i].name);
+                }
+                catch
+                {
 
+                }
             }
             // }
 
