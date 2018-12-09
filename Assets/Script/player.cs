@@ -16,7 +16,7 @@ public class player : MonoBehaviour
     public LayerMask enemyLayer;
     public LayerMask pitLayer;
     public LayerMask stoneLayer;
-    public int bullets = 3;
+    public int bullets;
     public GameObject bulletCounter;
     public GameObject bulletTile;
     public GameObject bulletMult;
@@ -33,6 +33,7 @@ public class player : MonoBehaviour
         bulletCounter = GameObject.Find("bullet_count");
         bulletTile = GameObject.Find("bullet1");
         bulletMult = GameObject.Find("bullet_mult");
+        bullets = 3; //set the default bullet count
     }
 
     // Update is called once per frame
@@ -50,7 +51,7 @@ public class player : MonoBehaviour
         GameObject gameObj = c.gameObject;
         if (gameObj.layer == 10)
         {//layer 10 is enemy layer
-            if (bullets >= 0)
+            if (bullets > 0)
             {
                 Debug.Log(bullets);
                 bullets--;
@@ -90,7 +91,7 @@ public class player : MonoBehaviour
         // button click 
         if (CrossPlatformInputManager.GetAxis("Horizontal") != 0 || CrossPlatformInputManager.GetAxis("Vertical") != 0)
         {
-            //Debug.Log("here");
+            //Debug.Log(bullets);
             newXPos = CrossPlatformInputManager.GetAxis("Horizontal") * moveSpeed * 0.7f;
             newYPos = CrossPlatformInputManager.GetAxis("Vertical") * moveSpeed * 0.7f;
         }
