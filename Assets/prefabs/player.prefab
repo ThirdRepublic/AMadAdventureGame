@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114376920435869548}
   - component: {fileID: 50346402912093402}
   - component: {fileID: 70912153185894632}
+  - component: {fileID: 58753320098626854}
   m_Layer: 20
   m_Name: player
   m_TagString: Untagged
@@ -64,6 +65,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &58753320098626854
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1893333634516698}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28}
+  serializedVersion: 2
+  m_Radius: 0.03
 --- !u!70 &70912153185894632
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -119,10 +135,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   bullets: 3
-  numofbullets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  bulletCounter: {fileID: 0}
+  bulletTile: {fileID: 0}
+  bulletMult: {fileID: 0}
   pushback: {x: 2, y: 2}
 --- !u!212 &212491961933516566
 SpriteRenderer:
