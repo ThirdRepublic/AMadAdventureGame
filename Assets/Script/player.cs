@@ -49,13 +49,14 @@ public class player : MonoBehaviour
     void OnCollisionEnter2D(Collision2D c)
     {
         GameObject gameObj = c.gameObject;
-        if (gameObj.layer == 10)
-        {//layer 10 is enemy layer
+        if (gameObj.layer == 10 && gameObj.activeSelf)
+        {
+            gameObj.SetActive(false);
+            //layer 10 is enemy layer
             if (bullets > 0)
             {
                 Debug.Log(bullets);
                 bullets--;
-                gameObj.SetActive(false);
             }
             else
             {
