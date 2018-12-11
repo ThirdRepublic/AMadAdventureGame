@@ -93,13 +93,13 @@ public class player : MonoBehaviour
         if (CrossPlatformInputManager.GetAxis("Horizontal") != 0 || CrossPlatformInputManager.GetAxis("Vertical") != 0)
         {
             //Debug.Log(bullets);
-            newXPos = CrossPlatformInputManager.GetAxis("Horizontal") * 1.3f;
-            newYPos = CrossPlatformInputManager.GetAxis("Vertical") * 1.3f;
+            newXPos = CrossPlatformInputManager.GetAxis("Horizontal") * 2.5f;
+            newYPos = CrossPlatformInputManager.GetAxis("Vertical") * 2.5f;
         }
         else // keyboard
         {
-            newXPos = Input.GetAxis("Horizontal") * 1.3f;
-            newYPos = Input.GetAxis("Vertical") * 1.3f;
+            newXPos = Input.GetAxis("Horizontal") * 2.5f;
+            newYPos = Input.GetAxis("Vertical") * 2.5f;
         }
         Vector2 playermoveset = new Vector2(newXPos, newYPos);
         myRigidbody2D.velocity = playermoveset;
